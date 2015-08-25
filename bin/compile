@@ -26,7 +26,7 @@ mv $WKHTMLTOPDF_BINARIES/* $BIN_PATH/
 
 echo "-----> Exporting PATH"
 mkdir -p $(dirname $WKHTMLTOPDF_PROFILE_PATH)
-echo 'export PATH="$PATH:$BIN_PATH"' >> $WKHTMLTOPDF_PROFILE_PATH
+echo 'export PATH="$PATH:$HOME/vendor/wkhtmltopdf/bin"' >> $WKHTMLTOPDF_PROFILE_PATH
 
 echo "-----> Cleaning up"
 rm -rf $WKHTMLTOPDF_PKG $WKHTMLTOPDF_PATH
